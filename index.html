@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp">
+    <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+
+    <title>MyChess</title>
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+    
+    
+  </head>
+  <body>
+    <div class="chessboard" id="myboard">
+      <div class="row">
+        <div class="wb" id="square-r0-c0"><img src="images/rook-b.svg" id="piece1" alt="Piece 1" draggable="true" ></div>
+        <div class="bb" id="square-r0-c1"><img src="images/knight-b.svg" id="piece2" alt="Piece 2" draggable="true"></div>
+        <div class="wb" id="square-r0-c2"><img src="images/bishop-b.svg" id="piece3" alt="Piece 3" draggable="true" ></div>
+        <div class="bb" id="square-r0-c3"><img src="images/queen-b.svg" id="piece4" alt="Piece 4" draggable="true" ></div>
+        <div class="wb" id="square-r0-c4"><img src="images/king-b.svg" id="piece5" alt="Piece 5" draggable="true" ></div>
+        <div class="bb" id="square-r0-c5"><img src="images/bishop-b.svg" id="piece6" alt="Piece 6" draggable="true" ></div>
+        <div class="wb" id="square-r0-c6"><img src="images/knight-b.svg" id="piece7" alt="Piece 7" draggable="true" ></div>
+        <div class="bb" id="square-r0-c7"><img src="images/rook-b.svg" id="piece8" alt="Piece 8" draggable="true"></div>
+      </div>
+      <div class="row">
+        <div class="bb" id="square-r1-c0"><img src="images/pawn-b.svg" id="piece9" alt="Piece 9" draggable="true"></div>
+        <div class="wb" id="square-r1-c1"><img src="images/pawn-b.svg" id="piece10" alt="Piece 10" draggable="true"></div>
+        <div class="bb" id="square-r1-c2"><img src="images/pawn-b.svg" id="piece11" alt="Piece 11" draggable="true"></div>
+        <div class="wb" id="square-r1-c3"><img src="images/pawn-b.svg" id="piece12" alt="Piece 12" draggable="true" ></div>
+        <div class="bb" id="square-r1-c4"><img src="images/pawn-b.svg" id="piece13" alt="Piece 13" draggable="true" ></div>
+        <div class="wb" id="square-r1-c5"><img src="images/pawn-b.svg" id="piece14" alt="Piece 14" draggable="true" ></div>
+        <div class="bb" id="square-r1-c6"><img src="images/pawn-b.svg" id="piece15" alt="Piece 15" draggable="true" ></div>
+        <div class="wb" id="square-r1-c7"><img src="images/pawn-b.svg" id="piece16" alt="Piece 16" draggable="true" ></div>
+      </div>
+      <div class="row">
+        <div class="wb" id="square-r2-c0"></div>
+        <div class="bb" id="square-r2-c1"></div>
+        <div class="wb" id="square-r2-c2"></div>
+        <div class="bb" id="square-r2-c3"></div>
+        <div class="wb" id="square-r2-c4"></div>
+        <div class="bb" id="square-r2-c5"></div>
+        <div class="wb" id="square-r2-c6"></div>
+        <div class="bb" id="square-r2-c7"></div>
+      </div>
+      <div class="row">
+        <div class="bb" id="square-r3-c0"></div>
+        <div class="wb" id="square-r3-c1"></div>
+        <div class="bb" id="square-r3-c2"></div>
+        <div class="wb" id="square-r3-c3"></div>
+        <div class="bb" id="square-r3-c4"></div>
+        <div class="wb" id="square-r3-c5"></div>
+        <div class="bb" id="square-r3-c6"></div>
+        <div class="wb" id="square-r3-c7"></div>
+      </div>
+      <div class="row">
+        <div class="wb" id="square-r4-c0"></div>
+        <div class="bb" id="square-r4-c1"></div>
+        <div class="wb" id="square-r4-c2"></div>
+        <div class="bb" id="square-r4-c3"></div>
+        <div class="wb" id="square-r4-c4"></div>
+        <div class="bb" id="square-r4-c5"></div>
+        <div class="wb" id="square-r4-c6"></div>
+        <div class="bb" id="square-r4-c7"></div>
+      </div>
+      <div class="row">
+        <div class="bb" id="square-r5-c0"></div>
+        <div class="wb" id="square-r5-c1"></div>
+        <div class="bb" id="square-r5-c2"></div>
+        <div class="wb" id="square-r5-c3"></div>
+        <div class="bb" id="square-r5-c4"></div>
+        <div class="wb" id="square-r5-c5"></div>
+        <div class="bb" id="square-r5-c6"></div>
+        <div class="wb" id="square-r5-c7"></div>
+      </div>
+      <div class="row">
+        <div class="wb" id="square-r6-c0"><img src="images/pawn-w.svg" id="piece17" alt="Piece 17" draggable="true" ></div>
+        <div class="bb" id="square-r6-c1"><img src="images/pawn-w.svg" id="piece18" alt="Piece 18" draggable="true" ></div>
+        <div class="wb" id="square-r6-c2"><img src="images/pawn-w.svg" id="piece19" alt="Piece 19" draggable="true" ></div>
+        <div class="bb" id="square-r6-c3"><img src="images/pawn-w.svg" id="piece20" alt="Piece 20" draggable="true" ></div>
+        <div class="wb" id="square-r6-c4"><img src="images/pawn-w.svg" id="piece21" alt="Piece 21" draggable="true" ></div>
+        <div class="bb" id="square-r6-c5"><img src="images/pawn-w.svg" id="piece22" alt="Piece 22" draggable="true" ></div>
+        <div class="wb" id="square-r6-c6"><img src="images/pawn-w.svg" id="piece23" alt="Piece 23" draggable="true" ></div>
+        <div class="bb" id="square-r6-c7"><img src="images/pawn-w.svg" id="piece24" alt="Piece 24" draggable="true" ></div>
+      </div>
+      <div class="row">
+        <div class="bb" id="square-r7-c0"><img src="images/rook-w.svg" id="piece25" alt="Piece 25" draggable="true" ></div>
+        <div class="wb" id="square-r7-c1"><img src="images/knight-w.svg" id="piece26" alt="Piece 26" draggable="true" ></div>
+        <div class="bb" id="square-r7-c2"><img src="images/bishop-w.svg" id="piece27" alt="Piece 27" draggable="true" ></div>
+        <div class="wb" id="square-r7-c3"><img src="images/queen-w.svg" id="piece28" alt="Piece 28" draggable="true" ></div>
+        <div class="bb" id="square-r7-c4"><img src="images/king-w.svg" id="piece29" alt="Piece 29" draggable="true" ></div>
+        <div class="wb" id="square-r7-c5"><img src="images/bishop-w.svg" id="piece30" alt="Piece 30" draggable="true" ></div>
+        <div class="bb" id="square-r7-c6"><img src="images/knight-w.svg" id="piece31" alt="Piece 31" draggable="true" ></div>
+        <div class="wb" id="square-r7-c7"><img src="images/rook-w.svg" id="piece32" alt="Piece 32" draggable="true" ></div>
+      </div>
+    </div>
+
+    <div class="c1"></div>
+
+    <script  src="script.js"></script>
+
+
+  </body>
+</html>
